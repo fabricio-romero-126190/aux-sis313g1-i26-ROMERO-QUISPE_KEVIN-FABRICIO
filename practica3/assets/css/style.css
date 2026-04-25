@@ -1,0 +1,385 @@
+
+body{
+    background-color: #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.seccion{
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    background-color: #ddd;
+}
+.seccion  h1:nth-child(2){
+        border-bottom: 5px solid blue;
+        display: inline-block;
+
+}
+.dato1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.dato2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+.seccion-personal{
+    background: white;
+    border-left: 5px solid blue;
+    padding: 20px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.seccion-personal p{
+    margin: 0;
+}
+.btn {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border: none;
+
+
+}
+.btn:hover{
+    background-color: blue;
+}
+.fondo1{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+
+}
+.btn1 {
+    margin: 20px;
+    padding: 170px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn1 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btnp {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+}
+
+.btnp button {
+    padding: 20px;
+    margin: 20px;
+    border: none;
+    background-color: white;
+    color: black;
+}
+
+.btnp button:hover {
+    background-color: blue;
+}
+.btn2 {
+    margin: 20px;
+    padding: 100px;
+    padding-bottom: 500px;
+    background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.btn2 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn3 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn3 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn3 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn3 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn3 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+.btn4 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100vh;
+}
+.btn4 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn4 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn4 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn4 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+.btn5 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn5 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn5 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn5 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn5 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+
+.btn6 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100vh;
+}
+.btn6 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn6 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn6 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn6 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+
+.btn7 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    height: 100vh;
+}
+.btn7 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn7 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn7 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn7 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+
+.btn8 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100vh;
+}
+.btn8 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn8 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn8 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn8 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+.btn9 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    height: 100vh;
+}
+.btn9 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn9 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn9 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn9 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+.btn10 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
+}
+.btn10 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn10 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn10 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn10 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+.btn11 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 100vh;
+}
+.btn11 button{
+    padding: 50px;
+    background-color: red;
+    border: none;
+}
+.btn11 button:nth-child(1){
+    background-color: red;
+    margin: 10px;
+}
+.btn11 button:nth-child(2){
+    background-color: yellow;
+    margin: 10px;
+}
+.btn11 button:nth-child(3){
+    background-color: green;
+    margin: 10px;
+}
+
+.btn12 {
+    margin: 20px;
+    padding: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    height: 100vh;
+}
+.btn12 button{
+    padding: 10px;
+    background-color: red;
+    border: none;
+}
