@@ -99,19 +99,19 @@ function multiplicar(){
 function dividir(){
     return div=a/b;
 }
-let a=parseFloat(prompt("dame un numero"));
+let e=parseFloat(prompt("dame un numero"));
 let b=parseFloat(prompt("dame un segundo numero"));
 let c=prompt("dime la operacion que deseas realizar ");
 if(c==="sumar"){
-    console.log("la suma es "+sumar(a,b));
+    console.log("la suma es "+sumar(e,b));
 }
 else if(c==="restar"){
-    console.log("la resta es"+restar(a,b));
+    console.log("la resta es"+restar(e,b));
 }
 else if(c==="multiplicar"){
-    console.log("la multiplicacion es"+multiplicar(a,b));
+    console.log("la multiplicacion es"+multiplicar(e,b));
 }
 else if(c==="dividir"){
-    console.log("la division es "+dividir(a,b));
+    console.log("la division es "+dividir(e,b));
 }
 //ejercicio10 final
