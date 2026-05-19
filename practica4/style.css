@@ -1,0 +1,126 @@
+/*SECCION1-INICIO*/
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    font-family: "Archivo Black", sans-serif;
+
+}
+nav{
+    background-color: #ddf4ff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: center;
+}
+.TEXTOCENTRO{
+    color: #737373;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 20px;
+
+}
+.BOTONESLOGIN {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+.BOTONESLOGIN :nth-child(1){
+    color: #96BB7C;
+    background-color: #ddf4ff;
+    border: none;
+}
+.BOTONESLOGIN :nth-child(2){
+    color: white;
+    background-color: #96BB7C;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+/*SECCION1-FINAL*/
+
+.seccion-centro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DDF4FF;
+    padding: 50px;
+}
+
+.seccion-text{
+    font-family: "Archivo Black", sans-serif;
+    color: #96BB7C;
+}
+
+.seccion-text2{
+    color: #252B42;
+}
+
+.seccion-p{
+    color: #737373;
+    margin-top: 20px;
+}
+
+.seccion-botones{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.seccion-botones button:nth-child(1){
+    background-color: #96BB7C;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+.seccion-botones button:nth-child(2){
+    background-color: transparent;
+    border: 1px solid #96BB7C;
+    padding: 10px 20px;
+}
+
+.seccion-img img{
+    width: 400px;
+}
+/*SECCION3-INICIO*/
+.LETREROS{
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
+.LETREROS1{
+    color: #96BB7C;
+    padding: 20px;
+    text-align: center;
+}
+.LETREROS2{
+    color: #252B42;
+    padding: 20px;
+}
+/*SECCION3-FINAL*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.LETREROS3{
+    color: #252B42;
+margin-bottom: 20px;
+
+}
+.LETREROS4{
+    color: #737373;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+/*SECCION3-FINAL*/
