@@ -1,117 +1,372 @@
-alert("hola otra vez de la pregunta 1 forma2");
-//para el ejercicio 4 inicio
-let numero = parseInt(prompt("Ingrese un numero"));
-for(let i = 1; i <= numero; i++){
-    if(i % 3 == 0 && i % 5 == 0){
-        console.log("FizzBuzz");
-    }
-    else if(i % 3 == 0){
-        console.log("Fizz");
-    }
-    else if(i % 5 == 0){
-        console.log("Buzz");
-    }
-    else{
-        console.log(i);
-    }
-}
-//ejercicio final 4
-//ejercicio 5 inicio
-let numero1 = parseInt(prompt("Ingrese la cantidad de numeros"));
-let a = 0;
-let b = 1;
-for(let i = 0; i < numero1; i++){
-    let suma = a + b;
-    console.log(suma);
-    a = b;
-    b = suma;
-}
-//ejercicio 5 final
-//ejercicio 6 inicio
-let numero2=parseInt(prompt("ingrese un numero para ver si es primo o no"));
-let c=0;
-for(let i=1;i<numero2;i++){
-    if(numero2%i===0){
-        c++;
-         console.log("este numero tiene"+c+"divisores");
-    }
-    else if(c===2){
-        console.log("este numero tiene mas de dos divisores por lo tanto no es primo");
-    }
-    else{
-        console.log("este numero no tiene mas de dos divisores por lo tanto sigue siendo primo");
-    }
-}
-//ejercicio6 final
-//ejercicio7 inicio
-let numero3=parseInt(prompt("dame un numero para que te pueda mostrar su tabla de multiplicar del 1 hasta el 10"));
-for(let i=1;i<=10;i++){
-    let mul=i*numero3;
-    console.log(i+"x"+numero3+"="+mul);
-}
-//ejercicio7 final
-//ejercicio8 inicio
-function contarvocales(texto){
-    let c=0;
-    for(let i=0; i<texto.length;i++){
-        let letra=texto[i].toLowerCase();
-        if(letra==="a"
-            || letra==="e"
-            || letra==="i"
-            || letra ==="o"
-            ||  letra==="u"
-        ){
+/*
+alert("Hola otra vez desde JavaScript externo");
 
-        c++;}
-        
-    }
-    console.log("esta palabra tiene"+c+" "+"vocales")
-}
-let vocal=prompt("dame una palabra para ver cuantas vocales tiene"); 
-contarvocales(vocal);
+// EJERCICIO 4
+function ejercicio4(){
 
-//ejercicio8 final
-//ejercicio9 inicio 9
-function mayor(){
-    let areglo=[1,10,5,6,2];
-    let m=areglo[0];
-    for(let i=0;i<areglo.length;i++){
-        if(areglo[i]>m){
-            m=areglo[i];
+    let numero = parseInt(prompt("Ingrese un numero"));
 
+    let salida = "";
+
+    for(let i = 1; i <= numero; i++){
+
+        if(i % 3 == 0 && i % 5 == 0){
+            salida += "FizzBuzz <br>";
         }
-
+        else if(i % 3 == 0){
+            salida += "Fizz <br>";
+        }
+        else if(i % 5 == 0){
+            salida += "Buzz <br>";
+        }
+        else{
+            salida += i + "<br>";
+        }
     }
-    console.log("el numero mayor de nuestro areglo es de "+m);
+
+    document.getElementById("resultado").innerHTML = salida;
 }
-mayor();
-//ejercicio9 final
-//ejercicio10 inicio
-function sumar(){
-    return suma=a+b;
+
+// EJERCICIO 5
+function ejercicio5(){
+
+    let numero1 = parseInt(prompt("Ingrese la cantidad de numeros"));
+
+    let a = 0;
+    let b = 1;
+
+    let salida = a + "<br>" + b + "<br>";
+
+    for(let i = 3; i <= numero1; i++){
+
+        let suma = a + b;
+
+        salida += suma + "<br>";
+
+        a = b;
+        b = suma;
+    }
+
+    document.getElementById("resultado").innerHTML = salida;
 }
-function restar(){
-    return resta=a-b;
+
+// EJERCICIO 6
+function ejercicio6(){
+
+    let numero2 = parseInt(prompt("Ingrese un numero"));
+
+    let divisores = 0;
+
+    for(let i = 1; i <= numero2; i++){
+
+        if(numero2 % i == 0){
+            divisores++;
+        }
+    }
+
+    if(divisores == 2){
+        document.getElementById("resultado").innerHTML =
+        "El numero es primo";
+    }
+    else{
+        document.getElementById("resultado").innerHTML =
+        "El numero no es primo";
+    }
 }
-function multiplicar(){
-    return mul=a*b;
+
+// EJERCICIO 7
+function ejercicio7(){
+
+    let numero3 = parseInt(prompt("Ingrese un numero"));
+
+    let salida = "";
+
+    for(let i = 1; i <= 10; i++){
+
+        salida += numero3 + " x " + i + " = " +
+        (numero3 * i) + "<br>";
+    }
+
+    document.getElementById("resultado").innerHTML = salida;
 }
-function dividir(){
-    return div=a/b;
+
+// EJERCICIO 8
+function ejercicio8(){
+
+    let texto = prompt("Ingrese una palabra o texto");
+
+    let contador = 0;
+
+    for(let i = 0; i < texto.length; i++){
+
+        let letra = texto[i].toLowerCase();
+
+        if(
+            letra == "a" ||
+            letra == "e" ||
+            letra == "i" ||
+            letra == "o" ||
+            letra == "u"
+        ){
+            contador++;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+    "La palabra tiene " + contador + " vocales";
 }
-let e=parseFloat(prompt("dame un numero"));
-let b=parseFloat(prompt("dame un segundo numero"));
-let c=prompt("dime la operacion que deseas realizar ");
-if(c==="sumar"){
-    console.log("la suma es "+sumar(e,b));
+
+// EJERCICIO 9
+function ejercicio9(){
+
+    let arreglo = [1, 10, 5, 6, 2];
+
+    let mayor = arreglo[0];
+
+    for(let i = 0; i < arreglo.length; i++){
+
+        if(arreglo[i] > mayor){
+            mayor = arreglo[i];
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+    "El numero mayor del arreglo es: " + mayor;
 }
-else if(c==="restar"){
-    console.log("la resta es"+restar(e,b));
+
+// FUNCIONES EJERCICIO 10
+function sumar(a,b){
+    return a + b;
 }
-else if(c==="multiplicar"){
-    console.log("la multiplicacion es"+multiplicar(e,b));
+
+function restar(a,b){
+    return a - b;
 }
-else if(c==="dividir"){
-    console.log("la division es "+dividir(e,b));
+
+function multiplicar(a,b){
+    return a * b;
 }
-//ejercicio10 final
+
+function dividir(a,b){
+    return a / b;
+}
+
+// EJERCICIO 10
+function ejercicio10(){
+
+    let num1 = parseFloat(prompt("Ingrese el primer numero"));
+
+    let num2 = parseFloat(prompt("Ingrese el segundo numero"));
+
+    let operacion = prompt(
+        "Ingrese la operacion: sumar, restar, multiplicar o dividir"
+    );
+
+    let resultado = "";
+
+    if(operacion == "sumar"){
+        resultado = sumar(num1, num2);
+    }
+    else if(operacion == "restar"){
+        resultado = restar(num1, num2);
+    }
+    else if(operacion == "multiplicar"){
+        resultado = multiplicar(num1, num2);
+    }
+    else if(operacion == "dividir"){
+        resultado = dividir(num1, num2);
+    }
+    else{
+        resultado = "Operacion no valida";
+    }
+
+    document.getElementById("resultado").innerHTML =
+    "Resultado: " + resultado;
+}
+
+
+*/
+alert("Hola otra vez desde JavaScript externo");
+
+// EJERCICIO 4
+function ejercicio4(){
+
+    let numero = parseInt(prompt("Ingrese un numero"));
+
+    let salida = "";
+
+    for(let i = 1; i <= numero; i++){
+
+        if(i % 3 == 0 && i % 5 == 0){
+            salida += "FizzBuzz <br>";
+        }
+        else if(i % 3 == 0){
+            salida += "Fizz <br>";
+        }
+        else if(i % 5 == 0){
+            salida += "Buzz <br>";
+        }
+        else{
+            salida += i + "<br>";
+        }
+    }
+
+    document.getElementById("resultado").innerHTML = salida;
+}
+
+// EJERCICIO 5
+function ejercicio5(){
+
+    let numero1 = parseInt(prompt("Ingrese la cantidad de numeros"));
+
+    let a = 0;
+    let b = 1;
+
+    let salida = a + "<br>" + b + "<br>";
+
+    for(let i = 3; i <= numero1; i++){
+
+        let suma = a + b;
+
+        salida += suma + "<br>";
+
+        a = b;
+        b = suma;
+    }
+
+    document.getElementById("resultado").innerHTML = salida;
+}
+
+// EJERCICIO 6
+function ejercicio6(){
+
+    let numero2 = parseInt(prompt("Ingrese un numero"));
+
+    let divisores = 0;
+
+    for(let i = 1; i <= numero2; i++){
+
+        if(numero2 % i == 0){
+            divisores++;
+        }
+    }
+
+    if(divisores == 2){
+        document.getElementById("resultado").innerHTML =
+        "El numero es primo";
+    }
+    else{
+        document.getElementById("resultado").innerHTML =
+        "El numero no es primo";
+    }
+}
+
+// EJERCICIO 7
+function ejercicio7(){
+
+    let numero3 = parseInt(prompt("Ingrese un numero"));
+
+    let salida = "";
+
+    for(let i = 1; i <= 10; i++){
+
+        salida += numero3 + " x " + i + " = " +
+        (numero3 * i) + "<br>";
+    }
+
+    document.getElementById("resultado").innerHTML = salida;
+}
+
+// EJERCICIO 8
+function ejercicio8(){
+
+    let texto = prompt("Ingrese una palabra o texto");
+
+    let contador = 0;
+
+    for(let i = 0; i < texto.length; i++){
+
+        let letra = texto[i].toLowerCase();
+
+        if(
+            letra == "a" ||
+            letra == "e" ||
+            letra == "i" ||
+            letra == "o" ||
+            letra == "u"
+        ){
+            contador++;
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+    "La palabra tiene " + contador + " vocales";
+}
+
+// EJERCICIO 9
+function ejercicio9(){
+
+    let arreglo = [1, 10, 5, 6, 2];
+
+    let mayor = arreglo[0];
+
+    for(let i = 0; i < arreglo.length; i++){
+
+        if(arreglo[i] > mayor){
+            mayor = arreglo[i];
+        }
+    }
+
+    document.getElementById("resultado").innerHTML =
+    "El numero mayor del arreglo es: " + mayor;
+}
+
+// FUNCIONES EJERCICIO 10
+function sumar(a,b){
+    return a + b;
+}
+
+function restar(a,b){
+    return a - b;
+}
+
+function multiplicar(a,b){
+    return a * b;
+}
+
+function dividir(a,b){
+    return a / b;
+}
+
+// EJERCICIO 10
+function ejercicio10(){
+
+    let num1 = parseFloat(prompt("Ingrese el primer numero"));
+
+    let num2 = parseFloat(prompt("Ingrese el segundo numero"));
+
+    let operacion = prompt(
+        "Ingrese la operacion: sumar, restar, multiplicar o dividir"
+    );
+
+    let resultado = "";
+
+    if(operacion == "sumar"){
+        resultado = sumar(num1, num2);
+    }
+    else if(operacion == "restar"){
+        resultado = restar(num1, num2);
+    }
+    else if(operacion == "multiplicar"){
+        resultado = multiplicar(num1, num2);
+    }
+    else if(operacion == "dividir"){
+        resultado = dividir(num1, num2);
+    }
+    else{
+        resultado = "Operacion no valida";
+    }
+
+    document.getElementById("resultado").innerHTML =
+    "Resultado: " + resultado;
+}

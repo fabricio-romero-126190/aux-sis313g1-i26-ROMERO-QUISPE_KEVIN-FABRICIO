@@ -1,4 +1,151 @@
 <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 5 Javascript</title>
+</head>
+<body>
+
+    <h1>PREGUNTAS TEORICAS</h1>
+
+    <ul>
+
+        <li>
+            <b>
+                Existen dos formas principales de conectar un archivo HTML con JavaScript.
+                Explique cuáles son estas 2 formas y proporcione un ejemplo básico de cada una.
+            </b>
+
+            <p>
+                Una forma es utilizando JavaScript interno.
+                Esto consiste en escribir código JavaScript dentro de la etiqueta script
+                directamente en el documento HTML.
+            </p>
+
+            <p>Ejemplo:</p>
+
+            <pre>
+script;
+alert("Hola desde JavaScript");
+script
+            </pre>
+
+            <p>
+                La segunda forma es utilizando un archivo externo con extensión .js.
+                Este archivo se conecta al HTML usando src.
+            </p>
+
+            <p>Ejemplo:</p>
+
+            <pre>
+script src="script.js"
+            </pre>
+
+        </li>
+
+        <br>
+
+        <li>
+            <b>
+                Explique paso a paso cómo visualizar los resultados de JavaScript utilizando
+                la consola del navegador.
+            </b>
+
+            <ol>
+                <li>Abrir el navegador.</li>
+                <li>Abrir el archivo HTML.</li>
+                <li>Presionar F12 o clic derecho → inspeccionar.</li>
+                <li>Ir a la pestaña Console o Consola.</li>
+                <li>Ahí podremos visualizar los resultados de JavaScript.</li>
+            </ol>
+
+        </li>
+
+        <br>
+
+        <li>
+            <b>
+                Explique qué son las variables en JavaScript y cuál es la diferencia entre
+                var, let y const.
+            </b>
+
+            <p>
+                Las variables sirven para almacenar información.
+            </p>
+
+            <ol>
+
+                <li>
+                    <b>let</b>
+                    <p>
+                        Permite cambiar el valor de una variable.
+                    </p>
+
+                    <pre>
+let nombre = "Kevin";
+                    </pre>
+                </li>
+
+                <li>
+                    <b>var</b>
+
+                    <p>
+                        Era la forma antigua de declarar variables.
+                    </p>
+
+                    <pre>
+var edad = 20;
+                    </pre>
+                </li>
+
+                <li>
+                    <b>const</b>
+
+                    <p>
+                        No permite cambiar el valor.
+                    </p>
+
+                    <pre>
+const PI = 3.14;
+                    </pre>
+
+                </li>
+
+            </ol>
+
+            <p>
+                Actualmente ya no se recomienda utilizar var porque puede causar problemas
+                en el alcance de variables.
+            </p>
+
+        </li>
+
+    </ul>
+
+
+    <h1>EJERCICIOS DE PROGRAMACION</h1>
+
+    <button onclick="ejercicio4()">Ejercicio 4</button>
+    <button onclick="ejercicio5()">Ejercicio 5</button>
+    <button onclick="ejercicio6()">Ejercicio 6</button>
+    <button onclick="ejercicio7()">Ejercicio 7</button>
+    <button onclick="ejercicio8()">Ejercicio 8</button>
+    <button onclick="ejercicio9()">Ejercicio 9</button>
+    <button onclick="ejercicio10()">Ejercicio 10</button>
+
+
+    <div id="resultado"></div>
+
+    <script src="script.js"></script>
+    <h1>auxi no sabia como poner los ejercicios  de modo que esten cada uno funcionando
+        uno por uno sin ponerlo en forma de comentario pra que de de cada uno en especifico
+        por eso investigue de fuentes dudosas :v para hacer esta vaina pero le voy dejar el codigo original que 
+        igual funciona solo que lo puse en comentario para que funcion uno por uno xd
+    </h1>
+
+    <!--
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -79,5 +226,9 @@
 
  
  </ol>
+</body>
+</html>
+    
+    -->
 </body>
 </html>
